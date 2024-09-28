@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "commit": "git pull && git add . && git commit -m",
+    "postcommit": "git push --all"
   },
   "author": "sangam mukherjee",
   "license": "ISC",
