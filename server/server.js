@@ -4,7 +4,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
 mongoose
-  .connect(``)
+  .connect(`mongodb+srv://kamalkantnawal10:<kamal@1234>@cluster0.qlsag.mongodb.net/`)
   .then(() => console.log("MongoDB connected"))
   .catch((error) => console.log(error));
 
@@ -26,3 +26,6 @@ app.use(
       })
     
 )
+app.use(cookieParser());
+app.use(express.json());
+app.listen(PORT, () => console.log(`Server is now running on port ${PORT}`));

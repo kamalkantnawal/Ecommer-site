@@ -10,7 +10,7 @@
     "commit": "git pull && git add . && git commit -m",
     "postcommit": "git push --all"
   },
-  "author": "sangam mukherjee",
+  "author": "kamal kant nawal",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
